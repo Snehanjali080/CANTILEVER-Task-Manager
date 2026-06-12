@@ -11,7 +11,7 @@ const app = express();
 // ── Middleware ────────────────────────────────────────────────
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
-    ? 'https://localhost:3000'   // ← replace with your frontend URL
+    ? 'https://cantilever-task-manager.vercel.app'   
     : 'http://localhost:3000',
   credentials: true,
 }));
